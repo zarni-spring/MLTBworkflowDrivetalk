@@ -8,6 +8,6 @@ jobs:
     steps:
       - uses: actions/checkout@main
       - name: Create Image
-        run: docker pull khainezayye/mltb:latest 
+        run: docker pull anasaty17/mltb 
       - name: Run Image
-        run: docker run --env CONFIG_FILE_URL=${{ secrets.CONFIG_FILE_URL }} --env TOKEN_PICKLE_URL=${{ secrets.TOKEN_PICKLE_URL }} khainezayye/mltb:latest 
+        run: docker run --env CONFIG_FILE_URL=${{ secrets.CONFIG_FILE_URL }} --env TOKEN_PICKLE_URL=${{ secrets.TOKEN_PICKLE_URL }} anasaty17/mltb 
